@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CinemaApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+          href="/webjars/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <script type="text/javascript" src="js/apimock.js" ></script>
+
+</head>
+
+
+<body  style="background: ghostwhite;" >
+
+<div class="container">
+
+    <div class="row" style="margin-top: 5%;">
+        <div class="col">
+
+            <form class="form-inline">
+                <label for="name_input">Cinema name</label>
+                <input type="text" class="form-control" id="name_input" placeholder="write the name"/>
+
+                <label for="date_input">Date</label>
+                <input type="date" class="form-control" id="date_input" placeholder="write the date"/>
+
+                <button type="button" class="btn btn-primary">Get Functions</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 5%;">
+
+        <div class="col">
+
+            <h5 id="cinema_name">Cinema name:</h5>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 5%; margin-right: 40%;">
+
+        <div class="col">
+            <table class="table table-bordered" id="table_cinema">
+
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Genre</th>
+                    <th scope="col">Hour</th>
+                    <th scope="col">availability</th>
+                </tr>
+
+                </thead>
+
+                <tbody id="table_body">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+
+
+
+
+
+</body>
+
+
+</html>

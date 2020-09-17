@@ -17,7 +17,7 @@ apimock = (function () {
         },
         getFunctionsByCinemaAndDate: function (cinema_name, fdate, callback) {
             callback(
-                    mockdata[cinema_name].functions.filter(
+                mockdata[cinema_name].functions.filter(
                     funct => funct.date.includes(fdate))
             );
         }
