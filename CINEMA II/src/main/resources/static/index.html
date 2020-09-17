@@ -11,6 +11,8 @@
           href="/webjars/bootstrap/4.5.2/css/bootstrap.min.css" />
 
     <script type="text/javascript" src="js/apimock.js" ></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
 
 </head>
 
@@ -27,9 +29,9 @@
                 <input type="text" class="form-control" id="name_input" placeholder="write the name"/>
 
                 <label for="date_input">Date</label>
-                <input type="date" class="form-control" id="date_input" placeholder="write the date"/>
+                <input type="text" class="form-control" id="date_input" placeholder="write the date"/>
 
-                <button type="button" class="btn btn-primary">Get Functions</button>
+                <button type="button" onclick="Module.getCinemaFunctions()" class="btn btn-primary">Get Functions</button>
             </form>
 
         </div>
@@ -39,7 +41,7 @@
 
         <div class="col">
 
-            <h5 id="cinema_name">Cinema name:</h5>
+            <p id="cinema_name"></p>
         </div>
     </div>
 

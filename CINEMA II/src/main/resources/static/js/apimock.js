@@ -10,12 +10,18 @@ apimock = (function () {
 
     mockdata["cinemaX"] = {"name": "cinemaX", "functions": [{"movie": {"name": "The Enigma", "genre": "Drama"}, "seats": seats, "date": "2018-12-18 15:30"}, {"movie": {"name": "The Enigma 2", "genre": "Drama"}, "seats": seats, "date": "2018-12-18 15:30"}]};
     mockdata["cinemaY"] = {"name": "cinemaY", "functions": [function1Y, function2Y, function3Y, function4Y]};
+    mockdata["cinemaA"] = {"name": "cinemaA", "functions": [function1Y, function2Y]};
+    mockdata["cinemaB"] = {"name": "cinemaB", "functions": [function3Y, function2Y , function1Y]};
+    mockdata["cinemaC"] = {"name": "cinemaC", "functions": [function1Y, function2Y , function4Y]};
+    mockdata["cinemaD"] = {"name": "cinemaD", "functions": [function1Y]};
+
 
     return {
         getFunctionsByCinema: function (cinema_name, callback) {
             callback(mockdata[cinema_name]);
         },
         getFunctionsByCinemaAndDate: function (cinema_name, fdate, callback) {
+            console.log(mockdata[cinema_name]);
             callback(
                 mockdata[cinema_name].functions.filter(
                     funct => funct.date.includes(fdate))
