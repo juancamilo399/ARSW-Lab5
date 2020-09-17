@@ -6,7 +6,7 @@ var Module = (function () {
 			return {
 				name:cinemaFunction.movie.name,
 				genero:cinemaFunction.movie.genre,
-				hora:cinemaFunction.date
+				hora:cinemaFunction.date.split(" ")[1]
 			}
 		})
 	};
