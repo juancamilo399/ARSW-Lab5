@@ -1,6 +1,9 @@
 var Module = (function () {
 
 
+
+	var url = 'js/apimock.js';
+
 	function _map(list){
 		return mapList = list.map(function(cinemaFunction){
 			return {
@@ -36,8 +39,9 @@ var Module = (function () {
 		cine = $("#name_input").val();
 		date = $("#date_input").val();
 		$("#movie_name").text("Availability of: "+movieName);
-		apimock.getFunctionByNameAndDate(cine,date,movieName,drawCanvas);
-
+		$.getScript(url,function(){
+			api.getFunctionByNameAndDate(cine,date,movieName,drawCanvas);
+		});
 	}
 
 
@@ -72,15 +76,17 @@ var Module = (function () {
 	}
 
 
-	function getCinemaFunctions(){
+	function getFunctionsByCinemaAndDate(){
 		cinemaName = $("#name_input").val();
 		cinemaDate = $("#date_input").val();
 		$("#cinema_name").text("Cinema name : "+ cinemaName);
-		apimock.getFunctionsByCinemaAndDate(cinemaName,cinemaDate,_table)
+		$.getScript(url,function(){
+			api.getFunctionsByCinemaAndDate(cinemaName,cinemaDate,_table);
+		});
 	}
 
 	return {
-		getCinemaFunctions: getCinemaFunctions,
+		getFunctionsByCinemaAndDate: getFunctionsByCinemaAndDate,
 		getAvailability: getAvailability
 	};
 })();

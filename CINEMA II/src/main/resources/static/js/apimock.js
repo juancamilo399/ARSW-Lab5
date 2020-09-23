@@ -1,5 +1,5 @@
 
-apimock = (function () {
+api = (function () {
 
     var seats = [[true, true, true, true, true, true, true, false, true, true, true, true], [true, true, true, true, true, true, false, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true]];
     var seats1 = [[false, true, true, true, true, true, true, false, true, true, true, true], [true, true, true, true, true, true, false, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true], [true, true, true, true, true, true, true, true, true, true, true, true]];
@@ -21,8 +21,8 @@ apimock = (function () {
         getFunctionsByCinema: function (cinema_name, callback) {
             callback(mockdata[cinema_name]);
         },
+
         getFunctionsByCinemaAndDate: function (cinema_name, fdate, callback) {
-            console.log(mockdata[cinema_name]);
             callback(
                 mockdata[cinema_name].functions.filter(
                     funct => funct.date.includes(fdate))
@@ -35,8 +35,6 @@ apimock = (function () {
             var funcion = data.find(f => f.movie.name == movie_name);
             callback(funcion);
         }
-
-
     }
 
 })();
