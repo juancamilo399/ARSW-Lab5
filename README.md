@@ -12,4 +12,4 @@
 4. Suba la aplicación (mvn spring-boot:run), y rectifique:
 1. Que la página sea accesible desde: http://localhost:8080/index.html
 2. Al abrir la consola de desarrollador del navegador, NO deben aparecer mensajes de error 404 (es decir, que las librerías de JavaScript se cargaron correctamente).
-![](https://https://github.com/juancamilo399/ARSW-Lab5/blob/master/img/part2index.PNG)
+![](https://github.com/juancamilo399/ARSW-Lab5/blob/master/CINEMA%20II/img/parte2index.PNG)
