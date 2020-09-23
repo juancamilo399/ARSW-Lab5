@@ -1,4 +1,10 @@
 # ARSW-Lab5
+
+## Integrantes
+
+*   Nicolás Aguilera Contreras
+*   Juan Camilo Ángel 
+
 # Parte I - Ajustes Backend
 
 1. Trabaje sobre la base del proyecto anterior una vez solucionado (REST-API Cinema).
