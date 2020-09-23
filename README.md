@@ -49,10 +49,14 @@ Junto con dos operaciones públicas, una que permita cambiar el nombre del cinem
 5. Una vez funcione la aplicación (sólo front-end), haga un módulo (llámelo 'apiclient') que tenga las mismas operaciones del 'apimock', pero que para las mismas use datos reales consultados del API REST. Para lo anterior revise cómo hacer peticiones GET con jQuery, y cómo se maneja el esquema de callbacks en este contexto.
 6. Modifique el código de app.js de manera que sea posible cambiar entre el 'apimock' y el 'apiclient' con sólo una línea de código.
 * Para esto usamos jQuery.getScript() que nos permite cargar un JavaScript del servidor mediante una request GET HTTP. De esta manera , solo es necesario cambiar el valor de la variable 'url' para usar la api que se desee. 
+
 ![](https://github.com/juancamilo399/ARSW-Lab5/blob/master/CINEMA%20II/img/parte4script1.PNG)
 ![](https://github.com/juancamilo399/ARSW-Lab5/blob/master/CINEMA%20II/img/parte4script2.PNG)
+
 * Además , los modulos de las api client y api mock deben llamarse de la misma manera.
+
 ![](https://github.com/juancamilo399/ARSW-Lab5/blob/master/CINEMA%20II/img/parte4api.PNG)
+
 7. Revise la documentación y ejemplos de los estilos de Bootstrap (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que sea más vistosa, y más cercana al mock dado al inicio del enunciado.
 
 
